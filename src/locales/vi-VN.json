@@ -129,6 +129,43 @@
           "alwaysOnTop": "Bật/Tắt luôn giữ cửa sổ mèo trên cùng."
         }
       },
+      "statistics": {
+        "title": "Thống kê nhập liệu",
+        "labels": {
+          "overview": "Tổng quan nhập liệu",
+          "todayTotal": "Nhập liệu hôm nay",
+          "total": "Tổng nhập liệu",
+          "liveApm": "APM trực tiếp",
+          "handUsage": "Tỷ lệ sử dụng hai tay",
+          "topKeys": "10 phím dùng nhiều nhất hôm nay",
+          "noData": "Chưa có dữ liệu nhập liệu",
+          "leftHand": "Trái",
+          "rightHand": "Phải",
+          "heatmap": "Bản đồ nhiệt bàn phím",
+          "heatmapEnabled": "Hiện bản đồ nhiệt phím",
+          "heatmapCounts": "Phân bố phím tích lũy",
+          "heatmapLess": "Ít hơn",
+          "heatmapMore": "Nhiều hơn",
+          "dataManagement": "Dữ liệu thống kê",
+          "exportStatistics": "Xuất thống kê JSON",
+          "clearStatistics": "Xóa thống kê"
+        },
+        "buttons": {
+          "export": "Xuất",
+          "clear": "Xóa"
+        },
+        "hints": {
+          "liveApm": "Số lần nhập liệu trong 60 giây gần nhất.",
+          "handUsage": "Không tính phím Space và các phím trung tính khác.",
+          "topKeys": "Xếp hạng phím bàn phím và chuột theo mức sử dụng hôm nay.",
+          "heatmap": "Màu dựa trên mức sử dụng tích lũy; phím đậm hơn được dùng nhiều hơn.",
+          "exportStatistics": "Xuất thống kê phím hôm nay và tích lũy.",
+          "clearStatistics": "Xóa thống kê hôm nay và tích lũy. Không thể hoàn tác.",
+          "clearConfirm": "Xóa toàn bộ thống kê?",
+          "exportSuccess": "Đã xuất thống kê.",
+          "clearSuccess": "Đã xóa thống kê."
+        }
+      },
       "about": {
         "title": "Giới thiệu",
         "labels": {

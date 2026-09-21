@@ -129,6 +129,43 @@
           "alwaysOnTop": "Toggle whether the cat window stays on top."
         }
       },
+      "statistics": {
+        "title": "Input Statistics",
+        "labels": {
+          "overview": "Input Overview",
+          "todayTotal": "Today's Inputs",
+          "total": "All-Time Inputs",
+          "liveApm": "Live APM",
+          "handUsage": "Keyboard Hand Usage",
+          "topKeys": "Top 10 Keys Today",
+          "noData": "No input data yet",
+          "leftHand": "Left",
+          "rightHand": "Right",
+          "heatmap": "Keyboard Heatmap",
+          "heatmapEnabled": "Show Key Heatmap",
+          "heatmapCounts": "All-Time Key Distribution",
+          "heatmapLess": "Less",
+          "heatmapMore": "More",
+          "dataManagement": "Statistics Data",
+          "exportStatistics": "Export Statistics JSON",
+          "clearStatistics": "Clear Statistics"
+        },
+        "buttons": {
+          "export": "Export",
+          "clear": "Clear"
+        },
+        "hints": {
+          "liveApm": "Inputs recorded in the last 60 seconds.",
+          "handUsage": "Space and other neutral keys are not included.",
+          "topKeys": "Keyboard and mouse inputs ranked by today's usage.",
+          "heatmap": "Colors are based on all-time usage; darker keys are used more.",
+          "exportStatistics": "Export today's and all-time key statistics.",
+          "clearStatistics": "Clear today's and all-time statistics. This cannot be undone.",
+          "clearConfirm": "Clear all statistics?",
+          "exportSuccess": "Statistics exported.",
+          "clearSuccess": "Statistics cleared."
+        }
+      },
       "about": {
         "title": "About",
         "labels": {

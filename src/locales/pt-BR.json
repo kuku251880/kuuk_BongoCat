@@ -129,6 +129,43 @@
           "alwaysOnTop": "Alternar se a janela do gato permanece no topo."
         }
       },
+      "statistics": {
+        "title": "Estatísticas de Entrada",
+        "labels": {
+          "overview": "Visão Geral",
+          "todayTotal": "Entradas Hoje",
+          "total": "Total Acumulado",
+          "liveApm": "APM ao Vivo",
+          "handUsage": "Uso das Mãos",
+          "topKeys": "10 Teclas Mais Usadas Hoje",
+          "noData": "Ainda não há dados de entrada",
+          "leftHand": "Esquerda",
+          "rightHand": "Direita",
+          "heatmap": "Mapa de Calor do Teclado",
+          "heatmapEnabled": "Mostrar Mapa de Calor",
+          "heatmapCounts": "Distribuição Acumulada",
+          "heatmapLess": "Menos",
+          "heatmapMore": "Mais",
+          "dataManagement": "Dados de Estatísticas",
+          "exportStatistics": "Exportar Estatísticas JSON",
+          "clearStatistics": "Limpar Estatísticas"
+        },
+        "buttons": {
+          "export": "Exportar",
+          "clear": "Limpar"
+        },
+        "hints": {
+          "liveApm": "Entradas registradas nos últimos 60 segundos.",
+          "handUsage": "Espaço e outras teclas neutras não são incluídos.",
+          "topKeys": "Entradas de teclado e mouse classificadas pelo uso de hoje.",
+          "heatmap": "As cores usam o total acumulado; teclas mais escuras foram mais usadas.",
+          "exportStatistics": "Exporta as estatísticas de hoje e acumuladas.",
+          "clearStatistics": "Limpa as estatísticas de hoje e acumuladas. Não pode ser desfeito.",
+          "clearConfirm": "Limpar todas as estatísticas?",
+          "exportSuccess": "Estatísticas exportadas.",
+          "clearSuccess": "Estatísticas limpas."
+        }
+      },
       "about": {
         "title": "Sobre",
         "labels": {

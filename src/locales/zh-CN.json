@@ -129,6 +129,43 @@
           "alwaysOnTop": "切换猫咪窗口是否置顶。"
         }
       },
+      "statistics": {
+        "title": "输入统计",
+        "labels": {
+          "overview": "输入概览",
+          "todayTotal": "今日输入",
+          "total": "累计输入",
+          "liveApm": "实时 APM",
+          "handUsage": "键盘左右手占比",
+          "topKeys": "今日高频键位 Top 10",
+          "noData": "暂无输入记录",
+          "leftHand": "左手",
+          "rightHand": "右手",
+          "heatmap": "键盘热力图",
+          "heatmapEnabled": "显示键位热力图",
+          "heatmapCounts": "累计键位分布",
+          "heatmapLess": "较少",
+          "heatmapMore": "较多",
+          "dataManagement": "统计数据",
+          "exportStatistics": "导出统计 JSON",
+          "clearStatistics": "清空统计"
+        },
+        "buttons": {
+          "export": "导出",
+          "clear": "清空"
+        },
+        "hints": {
+          "liveApm": "最近 60 秒内的输入次数。",
+          "handUsage": "不计入空格等无法区分左右的按键。",
+          "topKeys": "键盘与鼠标按键按当日使用次数排序。",
+          "heatmap": "根据累计使用次数着色，颜色越深表示使用越多。",
+          "exportStatistics": "导出今日与累计键位统计。",
+          "clearStatistics": "清空今日与累计统计，此操作无法撤销。",
+          "clearConfirm": "确定要清空全部统计数据吗？",
+          "exportSuccess": "统计数据已导出。",
+          "clearSuccess": "统计数据已清空。"
+        }
+      },
       "about": {
         "title": "关于",
         "labels": {

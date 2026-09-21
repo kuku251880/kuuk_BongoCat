@@ -8,8 +8,10 @@ import { onMounted, onUnmounted, ref, watch } from 'vue'
 import { useAppStore } from '@/stores/app'
 import { useCatStore } from '@/stores/cat'
 import { useModelStore } from '@/stores/model'
+import { useStatisticsStore } from '@/stores/statistics'
 import { inBetween } from '@/utils/is'
 import { isMac, isWindows } from '@/utils/platform'
+import { normalizeInputStatisticsId } from '@/utils/statistics'
 
 import { INVOKE_KEY, LISTEN_KEY, WINDOW_LABEL } from '../constants'
 import { useModel } from './useModel'
@@ -45,6 +47,7 @@ export function useDevice() {
   const releaseTimers = new Map<string, NodeJS.Timeout>()
   const appStore = useAppStore()
   const catStore = useCatStore()
+  const statisticsStore = useStatisticsStore()
   const latestCursorPoint = ref<CursorPoint>()
   const smoothedCursorPoint = ref<CursorPoint>()
   const scaleFactor = ref(1)
@@ -86,6 +89,7 @@ export function useDevice() {
   })
 
   onUnmounted(() => {
+    statisticsStore.clearPressedInputs()
     Ticker.shared.remove(tickerCallback)
   })
 
@@ -183,7 +187,26 @@ export function useDevice() {
     releaseTimers.set(key, timer)
   }
 
+  const trackInputStatistics = ({ kind, value }: DeviceEvent) => {
+    switch (kind) {
+      case 'KeyboardPress':
+        statisticsStore.recordPress('keyboard', normalizeInputStatisticsId('keyboard', value))
+        break
+      case 'KeyboardRelease':
+        statisticsStore.recordRelease('keyboard', normalizeInputStatisticsId('keyboard', value))
+        break
+      case 'MousePress':
+        statisticsStore.recordPress('mouse', normalizeInputStatisticsId('mouse', value))
+        break
+      case 'MouseRelease':
+        statisticsStore.recordRelease('mouse', normalizeInputStatisticsId('mouse', value))
+        break
+    }
+  }
+
   useTauriListen<DeviceEvent>(LISTEN_KEY.DEVICE_CHANGED, ({ payload }) => {
+    trackInputStatistics(payload)
+
     const { kind, value } = payload
 
     if (kind === 'KeyboardPress' || kind === 'KeyboardRelease') {

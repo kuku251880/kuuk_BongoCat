@@ -129,6 +129,43 @@
           "alwaysOnTop": "切換貓咪視窗是否置頂。"
         }
       },
+      "statistics": {
+        "title": "輸入統計",
+        "labels": {
+          "overview": "輸入概覽",
+          "todayTotal": "今日輸入",
+          "total": "累計輸入",
+          "liveApm": "即時 APM",
+          "handUsage": "鍵盤左右手佔比",
+          "topKeys": "今日高頻鍵位 Top 10",
+          "noData": "暫無輸入記錄",
+          "leftHand": "左手",
+          "rightHand": "右手",
+          "heatmap": "鍵盤熱力圖",
+          "heatmapEnabled": "顯示鍵位熱力圖",
+          "heatmapCounts": "累計鍵位分佈",
+          "heatmapLess": "較少",
+          "heatmapMore": "較多",
+          "dataManagement": "統計資料",
+          "exportStatistics": "匯出統計 JSON",
+          "clearStatistics": "清除統計"
+        },
+        "buttons": {
+          "export": "匯出",
+          "clear": "清除"
+        },
+        "hints": {
+          "liveApm": "最近 60 秒內的輸入次數。",
+          "handUsage": "不計入空格等無法區分左右的按鍵。",
+          "topKeys": "鍵盤與滑鼠按鍵依當日使用次數排序。",
+          "heatmap": "依累計使用次數著色，顏色越深表示使用越多。",
+          "exportStatistics": "匯出今日與累計鍵位統計。",
+          "clearStatistics": "清除今日與累計統計，此操作無法復原。",
+          "clearConfirm": "確定要清除全部統計資料嗎？",
+          "exportSuccess": "統計資料已匯出。",
+          "clearSuccess": "統計資料已清除。"
+        }
+      },
       "about": {
         "title": "關於",
         "labels": {
